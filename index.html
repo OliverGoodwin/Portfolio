@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="mono-label">Software Engineer</span>
+            <h1>Oliver Goodwin</h1>
+            <p class="hero-bio">
+                Graduate in Computer Science with strong interests in Software
+                Engineering, Artificial Intelligence, and Algorithmic Problem Solving,
+                excited to apply technical skills, analytical thinking, and passion for
+                technology to real-world challenges.
+                Seeking a role applying programming, problem-solving, and
+                collaborative skills to contribute to software development projects.
+            </p>
+            <div class="hero-links">
+                <a href="https://github.com/OliverGoodwin" target="_blank" class="btn-primary"><i class="fab fa-github"></i> GitHub</a>
+                <a href="https://www.linkedin.com/in/oliver-goodwin-133162376" target="_blank" class="btn-secondary"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Projects -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <div class="section-header-row">
+                <div>
+                    <h2>Projects</h2>
+                </div>
+                
+                <!-- Arrow control -->
+                <div class="carousel-controls">
+                    <button id="prev-btn" class="nav-arrow" aria-label="Previous projects">
+                        <i class="fas fa-arrow-left"></i>
+                    </button>
+                    <button id="next-btn" class="nav-arrow" aria-label="Next projects">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+            
+
+            <div class="projects-carousel" id="projects-track">
+                
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="project-category">Algorithmic Problem Solving</span>
+                        <div class="project-links">
+                            <a href="https://github.com/OliverGoodwin/AI-Player" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <!-- Gallery Photos with Captions -->
+                            <button class="gallery-trigger" data-images='[
+                                {"url": "assets/AI-Player1.png", "caption": "Interface to create a level."},
+                                {"url": "assets/AI-Player3.png", "caption": "Completion of State Space Search with optimised route to beat the level."},
+                                {"url": "assets/AI-Player2.png", "caption": "Evaluation of different state search algorithms."}
+                            ]' aria-label="View Screenshots">
+                                <i class="fas fa-images"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <h3>AI Player for Puzzle Game Johnny the Ghost</h3>
+                    <p class="project-desc">
+                        Implemented and compared multiple algorithmic statespace searching algorithms to solve a puzzle game. Optimized A* Search for efficient solving and created a
+                        level editor using a Tkinter GUI.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Implemented state-space search algorithms and custom heuristics to optimize pathfinding and decision-making logic.</li>
+                        <li>Conducted rigorous performance benchmarking across alternative algorithmic models to optimise space and time performance.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Python</span>
+                        <span>Tkinter</span>
+                        <span>State-Space-Search</span>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="project-category">Category / Year</span>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Project Title Two</h3>
+                    <p class="project-desc">
+                        Brief description of what this project does, the problem it solves, and your approach.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Key technical achievement or feature one.</li>
+                        <li>Key technical achievement or feature two.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Tech 1</span>
+                        <span>Tech 2</span>
+                        <span>Tech 3</span>
+                    </div>
+                </article>
+
+
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="project-category">Category / Year</span>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Project Title Three</h3>
+                    <p class="project-desc">
+                        Brief description of what this project does, the problem it solves, and your approach.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Key technical achievement or feature one.</li>
+                        <li>Key technical achievement or feature two.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Tech 1</span>
+                        <span>Tech 2</span>
+                        <span>Tech 3</span>
+                    </div>
+                </article>
+
+                <!-- Blank project card to copy and paste -->
+                <article class="project-card">
+                    <div class="card-top">
+                        <span class="project-category">Category / Year</span>
+                        <div class="project-links">
+                            <a href="#" target="_blank" aria-label="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3>Project Title Four</h3>
+                    <p class="project-desc">
+                        Brief description of what this project does, the problem it solves, and your approach.
+                    </p>
+                    <ul class="project-highlights">
+                        <li>Key technical achievement or feature one.</li>
+                        <li>Key technical achievement or feature two.</li>
+                    </ul>
+                    <div class="tech-stack">
+                        <span>Tech 1</span>
+                        <span>Tech 2</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Close modal">&times;</button>
+            <div class="modal-image-container">
+                <img id="modal-img" src="" alt="Project Screenshot">
+            </div>
+            <p id="modal-caption" class="modal-caption"></p>
+            <div class="modal-nav">
+                <button id="modal-prev" class="nav-arrow"><i class="fas fa-arrow-left"></i></button>
+                <span id="modal-counter" class="mono-label">1 / 1</span>
+                <button id="modal-next" class="nav-arrow"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
